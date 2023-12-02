@@ -1,9 +1,9 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-const galleryContainerElement = document.querySelector(".gallery");
-const imagesMarkUp = createItemsMarkup(galleryItems);
-galleryContainerElement.insertAdjacentHTML("beforeend", imagesMarkUp);
+const galleryContainerEl = document.querySelector(".gallery");
+const imagesMarkup = createItemsMarkup(galleryItems);
+galleryContainerEl.insertAdjacentHTML("beforeend", imagesMarkup);
 
 function createItemsMarkup(item) {
   return galleryItems
@@ -33,4 +33,4 @@ const onContainerClick = (e) => {
   instance.show();
 };
 
-galleryContainerElement.addEventListener("click", onContainerClick);
+galleryContainerEl.addEventListener("click", onContainerClick);
